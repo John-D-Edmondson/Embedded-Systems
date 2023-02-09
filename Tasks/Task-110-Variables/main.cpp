@@ -21,54 +21,56 @@ BusOut ledData(LED_D0_PIN, LED_D1_PIN, LED_D2_PIN, LED_D3_PIN, LED_D4_PIN, LED_D
 
 int main()
 {
+
+
     printf("\nTASK-110\n");
 
-    // Integer
-    int count = 0;
-    printf("count = %d\n", count);
+    // // Integer
+    // int count = 10;
+    // printf("count = %d\n", count);
 
-    // Add one to count
-    count = count + 1;
-    printf("New value of count = %d\n", count);
+    // // Add one to count
+    // count = count + 2;
+    // printf("New value of count = %d\n", count);
 
-    // Char
-    char character;
-    character = 'A';
-    printf("The character %c has the ASCII code %d\n", character, character);
+    // // Char
+    // char character;
+    // character = 65;
+    // printf("The character %c has the ASCII code %d\n", character, character);
 
     // Short
-    short shortCount = 32766;
+    unsigned short shortCount = 32766;
     printf("The value of shortCount is %hd\n", shortCount);
-    shortCount = shortCount + 1;
+    shortCount = shortCount + 2;
     printf("add 1 and shortCount is %hd\n", shortCount);
 
-    // Long long
-    long long NN = 0x12345678ABCD0001LL; //Literal in HEX
-    printf("A very large number %lld\n", NN);
-    printf("A very large number in hex %llX\n", NN);
+    // // Long long
+    // long long NN = 0x12345678ABCD0001LL; //Literal in HEX
+    // printf("A very large number %lld\n", NN);
+    // printf("A very large number in hex %llX\n", NN);
 
-    // unsigned
-    unsigned short p = 1; //16 bit
-    printf("unsigned int p = %u\n", p);
-    p = p - 2;
-    printf("Subtract 2. Now unsigned int p = %u\n", p);
+    // // unsigned
+    // unsigned short p = 1; //16 bit
+    // printf("unsigned int p = %u\n", p);
+    // p = p - 2;
+    // printf("Subtract 2. Now unsigned int p = %u\n", p);
 
-    // float 
-    float pi_float = 3.1415926536;
-    printf("The value of pi is approximately %f\n", pi_float);
+    // // float 
+    // float pi_float = 3.1415926536;
+    // printf("The value of pi is approximately %f\n", pi_float);
 
-    // double
-    double pi_double = 3.1415926536l;
-    printf("The value of pi is approximately %lf\n", pi_double);
+    // // double
+    // double pi_double = 3.1415926536l;
+    // printf("The value of pi is approximately %lf\n", pi_double);
 
-    // Data type sizes (in bytes)
-    printf("Size of a char is %d bytes\n", sizeof(char));
-    printf("Size of a short is %d bytes\n", sizeof(short));
-    printf("Size of a int is %d bytes\n", sizeof(int));
-    printf("Size of a long is %d bytes\n", sizeof(long));
-    printf("Size of a long long is %d bytes\n", sizeof(long long));
-    printf("Size of a float is %d bytes\n", sizeof(float));
-    printf("Size of a double is %d bytes\n", sizeof(double));
+    // // Data type sizes (in bytes)
+    // printf("Size of a char is %d bytes\n", sizeof(char));
+    // printf("Size of a short is %d bytes\n", sizeof(short));
+    // printf("Size of a int is %d bytes\n", sizeof(int));
+    // printf("Size of a long is %d bytes\n", sizeof(long));
+    // printf("Size of a long long is %d bytes\n", sizeof(long long));
+    // printf("Size of a float is %d bytes\n", sizeof(float));
+    // printf("Size of a double is %d bytes\n", sizeof(double));
 
     // Stop
     while (true);   
