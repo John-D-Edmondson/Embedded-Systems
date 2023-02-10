@@ -32,13 +32,15 @@ int main()
         while (SW_BLUE == 0);
 
         //Turn on LED
-        ledRed = 1;
+        ledRed = !ledRed;
 
         //Wait for 500ms
-        tmr1.reset();
-        while (tmr1.elapsed_time() < 500ms); //How about this for C++ magic :)
+        //tmr1.reset();
 
         wait_us(500000);
+        //while (tmr1.elapsed_time() < 500ms); //How about this for C++ magic :)
+
+       // wait_us(500000);
 
         //Turn off LED
         ledRed = 0;
